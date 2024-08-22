@@ -1,0 +1,171 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+/* 
+/////////TODO */
+/* Enhanced .todo-container with gradient background */
+.todo-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(135deg, #2196f3, #1976d2); /* Dark blue gradient */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+h1{
+  color: white;
+}
+
+.todo-container:hover {
+  background: linear-gradient(135deg, #1a73e8, #134d7f); /* Darker blue gradient on hover */
+}
+
+/* Enhanced .student-form with filter and transition effects */
+.student-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  filter: brightness(1.1) contrast(1.2); /* Brighten and increase contrast */
+  transition: filter 0.3s ease;
+}
+
+.student-form:hover {
+  filter: brightness(1.2) contrast(1.3); /* Even brighter and more contrast on hover */
+}
+
+/* Enhanced input fields with transition effects */
+.student-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background: linear-gradient(to bottom, #f7f7f7, #e7e7e7); /* Light gray gradient background */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-form input:focus {
+  border-color: #2196f3; /* Dark blue border on focus */
+  box-shadow: 0 0 8px rgba(33, 150, 243, 0.5); /* Dark blue shadow on focus */
+  background: linear-gradient(to bottom, #fff, #f7f7f7); /* White to light gray gradient on focus */
+}
+
+/* Enhanced button with transformation effects */
+.student-form button {
+  padding: 10px;
+  background-color: #2196f3; /* Dark blue background */
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Dark shadow */
+}
+
+.student-form button:hover {
+  background-color: #1a73e8; /* Darker blue background on hover */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Enhanced .student-table with transition effects */
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  transition: transform 0.3s ease;
+}
+
+.student-table:hover {
+  transform: scale(1.02);
+}
+
+.student-table th,
+.student-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+
+  
+  
+  
+  text-align: left;
+  transition: background-color 0.3s ease;
+  background: linear-gradient(to bottom, #f7f7f7, #e7e7e7); /* Light gray gradient background */
+}
+
+.student-table th {
+  background-color: #2196f3; 
+  
+  color: black;
+}
+
+.student-table tr:hover {
+  background-color: #f1f8e9;
+  
+
+}
+span{
+  color: goldenrod;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .todo-container {
+    padding: 10px;
+  }
+
+  .student-form input,
+  .student-form button {
+    font-size: 14px;
+  }
+
+  .student-table th,
+  .student-table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .student-form {
+    flex-direction: column;
+  }
+
+  .student-form input,
+  .student-form button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .student-table th,
+  .student-table td {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
